@@ -1,6 +1,6 @@
 // Service Worker: офлайн-кэш всех файлов приложения и CDN-библиотек.
 // При изменении файлов приложения увеличьте VERSION — клиенты получат обновление.
-const VERSION = 'v1.0.1';
+const VERSION = 'v1.0.2';
 const APP_CACHE = `kbzhu-app-${VERSION}`;
 const CDN_CACHE = 'kbzhu-cdn-v1';
 
