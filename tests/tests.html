@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тесты КБЖУ</title>
+  <style>
+    :root { --bg: #fff; --text: #17201a; --ok: #2e7d32; --fail: #c62828; --muted: #5f6b63; color-scheme: light dark; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #121614; --text: #e6ece7; --ok: #81c784; --fail: #ef5350; --muted: #9aa69e; } }
+    body { margin: 0; padding: 16px; background: var(--bg); color: var(--text); font: 15px/1.45 system-ui, sans-serif; }
+    h1 { font-size: 1.3rem; }
+    h2 { font-size: 1rem; margin: 18px 0 6px; }
+    .t { padding: 3px 0; }
+    .ok::before { content: "✓ "; color: var(--ok); font-weight: 700; }
+    .fail { color: var(--fail); }
+    .fail::before { content: "✕ "; font-weight: 700; }
+    pre { margin: 2px 0 6px 20px; white-space: pre-wrap; color: var(--muted); font-size: 13px; }
+    #summary { font-weight: 700; font-size: 1.1rem; }
+    #summary.passed { color: var(--ok); }
+    #summary.failed { color: var(--fail); }
+  </style>
+</head>
+<body>
+  <h1>Тесты: calc.js и голосовой парсер</h1>
+  <div id="summary">Выполняется…</div>
+  <div id="out"></div>
+  <p><a href="../index.html">← К приложению</a></p>
+  <script type="module" src="tests.js"></script>
+</body>
+</html>
